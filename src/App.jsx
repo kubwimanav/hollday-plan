@@ -23,9 +23,7 @@ import Home from './assets/components/Home'
 import { AppContext } from './assets/contexts/ContextProvider'
 import Calendar from './assets/components/dashboard/Calendar'
 import Booking from './assets/components/dashboard/Booking'
-import Protectedraute from './assets/components/dashboard/Protectedraute'
 import Learn from './assets/components/dashboard/Learn'
-// import Vincent from './assets/components/dashboard/vincent'
 const Layout = () => {
   return (
     <>
@@ -58,9 +56,9 @@ function App() {
        <Route path='learn'element={<Learn/>}/>
         <Route path="/login" element={<Login />} />
        <Route path="/sign" element={<SignupForm />} /> 
-          <Route path="/dashboard" element={<Protectedraute >
+          <Route path="/dashboard" element={
           <Dashboard />  
-          </Protectedraute>
+          
           }>
            <Route index element={<Camps/>}/>  
           <Route path="/dashboard/users" element={<User/>} />

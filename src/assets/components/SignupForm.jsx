@@ -110,9 +110,6 @@ alert(error.response.data.message)
         <button className='signupbutton'  type="submit">Sign Up</button>
       </form>
       </div>
-      <div className='loginimage'>
-        <img src={log}/>
-    </div>
     </div>
    
   );

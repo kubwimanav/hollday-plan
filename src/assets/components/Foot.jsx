@@ -63,7 +63,7 @@ function Foot () {
         </div>
       </div>
       <div className='copy'>
-            <p>Copyright © 2021 Geek Code Lab. All Rights Reserved.</p>
+            <p>Copyright © 2021 Vincent T. All Rights Reserved.</p>
             <div className='copy1' >
             <h>Privacy Policy</h>
             <p>Terms of Use</p>

@@ -151,7 +151,7 @@ const {
     <div className='chartsss'>
       <p className='dashord'   onClick={openFormm}>   AddTour</p>
         {openn  &&(<User openFormm={openFormm} />)}
-<table className='tourtable'>
+      <table className='tourtable'>
     <thead>
       <tr  className='tablerows'> 
         <td>Image</td>

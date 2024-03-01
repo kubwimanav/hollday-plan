@@ -123,7 +123,22 @@
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
  }
 
+@media (max-width:1900px) {
+ .column{
+  display: flex;
+ }
+ .iconss{
+    transform: translatex(20px);
+    margin-top: 20px;
+    font-size: 15px;
+      /* transform: translatey(15px); */
 
+
+ }
+ .contact-input{
+  width: 273px;
+ }
+}
  
 
  @media (max-width:1200px) {
@@ -179,6 +194,67 @@
   gap: 40px;
 }
  }
+
+
+ @media (max-width:980px) {
+  .iconss{
+    display: none;
+  }
+  .contact{
+  margin: 5%;
+  padding-left: 10%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  justify-content: center;
+}
+.contacts{
+  display: flex;
+  transform: translatey(0px);
+  gap: 40px;
+}
+.contact-text{
+  padding: 20px;
+  width: 280px;
+  border-radius: 7px;
+  margin-left: 0px;
+  
+}
+.form{
+  box-shadow: 2px 2px 4px;
+   width: 75%;
+   height: 40%;
+   padding: 2%;
+  
+}
+.contact-input{
+  width: 280px;
+}
+ .contact1{
+   padding-left: 30%;
+  width: 50vh;
+      height: 210px;
+
+ }
+ 
+ .contact2{
+ padding-left: 30%;
+  width: 50vh;
+      height: 210px;
+
+ }
+ .contact1-2{
+  width: 40vh;
+ }
+  .contact2-1{
+  width: 40vh;
+ }
+
+
+ }
+
+
+
 
  @media (max-width:768px) {
   .iconss{

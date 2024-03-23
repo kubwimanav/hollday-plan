@@ -20,7 +20,6 @@ import { AppContext } from './assets/contexts/ContextProvider'
 import Calendar from './assets/components/dashboard/Calendar'
 import Booking from './assets/components/dashboard/Booking'
 import Learn from './assets/components/dashboard/Learn'
-import Eric from './assets/components/Eric'
 const Layout = () => {
   return (
     <>
@@ -52,7 +51,7 @@ function App() {
           <Route path="learn" element={<Learn />} />
           <Route path="/login" element={<Login />} />
           <Route path="/sign" element={<SignupForm />} />
-          <Route path="/eric" element={<Eric/>} />
+          
           <Route path="/dashboard" element={<Dashboard />}>
             <Route index element={<Camps />} />
             <Route path="/dashboard/users" element={<User />} />

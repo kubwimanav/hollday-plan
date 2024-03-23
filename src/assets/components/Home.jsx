@@ -9,7 +9,6 @@ import image from '../images/image-2.jpg'
 import photo from '../images/images-3.jpg'
 import phot from '../images/images-4.jpeg'
 import { mycontext } from "../contexts/ContextProvider";
-import Eric from "./Eric";
 
 function Home () {
 
@@ -134,7 +133,6 @@ function Home () {
             ))}
           </div>
         </section>
-        <Eric />
       </div>
     );
 } export default Home

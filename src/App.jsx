@@ -20,6 +20,7 @@ import { AppContext } from './assets/contexts/ContextProvider'
 import Calendar from './assets/components/dashboard/Calendar'
 import Booking from './assets/components/dashboard/Booking'
 import Learn from './assets/components/dashboard/Learn'
+import Eric from './assets/components/Eric'
 const Layout = () => {
   return (
     <>
@@ -37,39 +38,33 @@ function App() {
   const [count, setCount] = useState(0);
   return (
     <AppContext>
-       <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route index element={<Home/>} /> 
-          <Route path="/homepage" element={<Home/>} />
-          <Route path="/contact_page" element={<Contact />} />
-          <Route path="/tour" element={<Tour />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/single/:_id" element={<Single />} />
-          <Route path="/edit" element={<Edit />} />
-        
-        </Route>
-       <Route path='learn'element={<Learn/>}/>
-        <Route path="/login" element={<Login />} />
-       <Route path="/sign" element={<SignupForm />} /> 
-          <Route path="/dashboard" element={
-          <Dashboard />  
-          
-          }>
-           <Route index element={<Camps/>}/>  
-          <Route path="/dashboard/users" element={<User/>} />
-          <Route path="place" element={<Places/>} />
-          <Route path="c" element={<Camps/>} />
-          <Route path="contact" element={<Calendar/>} />
-          <Route path="book" element={<Booking/>} />
-          <Route path="toure" element={<Toure/>} />
-        
-             </Route>
-        
-      </Routes>
-    </BrowserRouter>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Layout />}>
+            <Route index element={<Home />} />
+            <Route path="/homepage" element={<Home />} />
+            <Route path="/contact_page" element={<Contact />} />
+            <Route path="/tour" element={<Tour />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/single/:_id" element={<Single />} />
+            <Route path="/edit" element={<Edit />} />
+          </Route>
+          <Route path="learn" element={<Learn />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/sign" element={<SignupForm />} />
+          <Route path="/eric" element={<Eric/>} />
+          <Route path="/dashboard" element={<Dashboard />}>
+            <Route index element={<Camps />} />
+            <Route path="/dashboard/users" element={<User />} />
+            <Route path="place" element={<Places />} />
+            <Route path="c" element={<Camps />} />
+            <Route path="contact" element={<Calendar />} />
+            <Route path="book" element={<Booking />} />
+            <Route path="toure" element={<Toure />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
     </AppContext>
-   
   );
 }
 export default App;

@@ -6,7 +6,8 @@ export const AppContext =({children})=>{
     const [tour, setTour] = useState([]);
     const [users, setUsers] = useState([]);
     const [contact, setContact] =useState([]);
-    const [booking, setBooking] =useState([]);
+  const [booking, setBooking] = useState([]);
+  const [todoss, setTodoss] = useState([]);
     
   useEffect(() => {
     const  fetchtours = async () => {
@@ -125,10 +126,33 @@ console.log(tokenn)
       fetchbook()
 
     
-},[])
+  }, [])
+  
+
+
+
+    useEffect(() => {
+      fetchTodos();
+    }, []);
+
+    const fetchTodos = async () => {
+      try {
+        const response = await fetch(
+          "https://todo-app-api-fkhb.onrender.com/api/todos"
+        );
+        if (!response.ok) {
+          throw new Error("Failed to fetch todos");
+        }
+        console.log(response)
+        setTodoss(response.data);
+      } catch (error) {
+        alert(error)
+        console.error("Error fetching todos:", error);
+      }
+    };
 
     return(
-        <stateContext.Provider value={{users,setUsers,tour,setTour,contact,setContact,booking,setBooking}}>
+        <stateContext.Provider value={{users,setUsers,tour,setTour,contact,setContact,booking,setBooking,todoss,setTodoss}}>
             {children}
         </stateContext.Provider>
     )

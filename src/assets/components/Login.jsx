@@ -103,9 +103,6 @@ alert(error.response.data.message)
       </button>
       </div>
       </div>
-  
-<div className='loginimage'>
-</div>
     </div>
 
   

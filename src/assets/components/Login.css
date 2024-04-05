@@ -1,22 +1,12 @@
  
   .logincontainer{
     display: flex;
-   
-    border: 2px ;
-    height: 100vh;
-   
-   
-    
+    background-color: #c29d59;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 100vh;
   }
-  
-  .loginimage {
-    flex-basis: 50%;
-    background-image: url('../images/LoginPage.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-  
-  
+
   .loginpassword{
     gap: 12%;
     
@@ -24,14 +14,11 @@
   }
   
   .login-form {
-    flex-basis: 50%;
     background: #fff;
-    
-    border-radius: 5px;
+    padding: 50px;
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
-    
-    padding: 10% 5% 5% 5%;
     gap: 13px;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
   }
@@ -46,7 +33,7 @@
   }
   
   .logininput {
-   width: 45%;
+   width: 20rem;
     padding: 15px;
     border: 1px solid #f0eeee;
     border-radius: 3px;
@@ -55,7 +42,7 @@
   .login-btn {
     background:  #c29d59;
     color: #fff;
-    width: 50%;
+    width: 60vh;
     padding: 15px;
     border: none;
     border-radius: 3px;
@@ -68,7 +55,7 @@
   .social-buttons {
     display: flex;
     
-  gap: 25px;
+  gap: 67px;
  
   }
   

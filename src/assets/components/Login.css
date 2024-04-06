@@ -85,42 +85,47 @@
   .sinin:hover{
     color: rgb(134, 134, 227);
   }
-  @media (max-width: 420px) {
+@media (max-width:480px) {
 
-    .loginimage{
-      display: none;
-    }
     .logincontainer{
-      display: flex;
-      border: 2px solid black;
-      height: auto;
-      padding: 5%;
+    display: flex;
+    background-color: #c29d59;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 100vh;
+  }
+    .login-form {
+    padding: 50px 50px 50px 50px;
     
-      
-    }
+  }
+    .social-buttons {
+    display: flex;
+    
+     gap: 25px;
+ 
+  }
     .logininput {
-      width: 80%;
+   width: 15rem;
+    padding: 15px;
+    border: 1px solid #f0eeee;
+    border-radius: 3px;
   }
-  .login-btn:hover{
-    background-color: #4c4a4a ;
-  }
-  .login-btn {
+    .login-btn {
     background:  #c29d59;
     color: #fff;
-    width: 88%;
+    width: 30vh;
     padding: 15px;
     border: none;
     border-radius: 3px;
     cursor: pointer;
   } 
-  .login-form {
-    flex-basis: 90%;
- 
-  }
-  .google-button,
+    .google-button,
   .facebook-button {
-   
+    display: flex;
+    align-items: center;
     padding: 10px 30px;
     
   }
+  
+  
 }

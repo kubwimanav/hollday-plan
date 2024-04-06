@@ -34,6 +34,7 @@
   
   .logininput {
    width: 20rem;
+   background-color: aliceblue;
     padding: 15px;
     border: 1px solid #f0eeee;
     border-radius: 3px;
@@ -85,7 +86,30 @@
   .sinin:hover{
     color: rgb(134, 134, 227);
   }
-@media (max-width:480px) {
+  @media (max-width:1340) {
+        .logincontainer{
+
+    display: flex;
+    background-color: #c29d59;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+    .login-btn {
+    background:  #c29d59;
+    color: #fff;
+    width: 50vh;
+    padding: 15px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  } 
+  
+
+    
+  }
+
+  @media (max-width:768px) {
 
     .logincontainer{
     display: flex;
@@ -114,6 +138,50 @@
     background:  #c29d59;
     color: #fff;
     width: 30vh;
+    padding: 15px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  } 
+    .google-button,
+  .facebook-button {
+    display: flex;
+    align-items: center;
+    padding: 10px 30px;
+    
+  }
+  
+  
+}
+@media (max-width:480px) {
+
+    .logincontainer{
+    display: flex;
+    background-color: #c29d59;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 100vh;
+  }
+    .login-form {
+    padding: 50px 50px 50px 50px;
+    
+  }
+    .social-buttons {
+    display: flex;
+    
+     gap: 35px;
+ 
+  }
+    .logininput {
+   width: 15rem;
+    padding: 15px;
+    border: 1px solid #f0eeee;
+    border-radius: 3px;
+  }
+    .login-btn {
+    background:  #c29d59;
+    color: #fff;
+    width: 38vh;
     padding: 15px;
     border: none;
     border-radius: 3px;

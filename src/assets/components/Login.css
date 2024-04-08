@@ -33,9 +33,12 @@
   }
   
   .logininput {
-   width: 20rem;
-   background-color: aliceblue;
-    padding: 15px;
+    background-color: aliceblue;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 6rem;
+    padding-left: 6rem;
+    line-height: 0;
     border: 1px solid #f0eeee;
     border-radius: 3px;
   }
@@ -43,8 +46,10 @@
   .login-btn {
     background:  #c29d59;
     color: #fff;
-    width: 60vh;
-    padding: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 10.7rem;
+    padding-right: 11rem;
     border: none;
     border-radius: 3px;
     cursor: pointer;
@@ -56,7 +61,7 @@
   .social-buttons {
     display: flex;
     
-  gap: 67px;
+   gap: 97px;
  
   }
   
@@ -87,19 +92,24 @@
     color: rgb(134, 134, 227);
   }
   @media (max-width:1340) {
-        .logincontainer{
-
-    display: flex;
-    background-color: #c29d59;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
+  
+  .logininput {
+    background-color: aliceblue;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 6rem;
+    padding-left: 6rem;
+    border: 1px solid #f0eeee;
+    border-radius: 3px;
   }
-    .login-btn {
+  
+  .login-btn {
     background:  #c29d59;
     color: #fff;
-    width: 50vh;
-    padding: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 10.7rem;
+    padding-right: 11rem;
     border: none;
     border-radius: 3px;
     cursor: pointer;
@@ -111,89 +121,139 @@
 
   @media (max-width:768px) {
 
-    .logincontainer{
-    display: flex;
-    background-color: #c29d59;
-    align-items: center;
-    justify-content: space-around;
-    min-height: 100vh;
-  }
-    .login-form {
-    padding: 50px 50px 50px 50px;
-    
-  }
-    .social-buttons {
-    display: flex;
-    
-     gap: 25px;
- 
-  }
-    .logininput {
-   width: 15rem;
-    padding: 15px;
+  .logininput {
+    background-color: aliceblue;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 6rem;
+    padding-left: 6rem;
     border: 1px solid #f0eeee;
     border-radius: 3px;
   }
-    .login-btn {
+  
+  .login-btn {
     background:  #c29d59;
     color: #fff;
-    width: 30vh;
-    padding: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 10.7rem;
+    padding-right: 11rem;
     border: none;
     border-radius: 3px;
     cursor: pointer;
   } 
-    .google-button,
-  .facebook-button {
-    display: flex;
-    align-items: center;
-    padding: 10px 30px;
-    
-  }
   
   
 }
 @media (max-width:480px) {
 
-    .logincontainer{
-    display: flex;
-    background-color: #c29d59;
-    align-items: center;
-    justify-content: space-around;
-    min-height: 100vh;
-  }
-    .login-form {
-    padding: 50px 50px 50px 50px;
-    
-  }
-    .social-buttons {
-    display: flex;
-    
-     gap: 35px;
- 
-  }
-    .logininput {
-   width: 15rem;
-    padding: 15px;
+  .logininput {
+    background-color: aliceblue;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 5rem;
+    padding-left: 5rem;
     border: 1px solid #f0eeee;
     border-radius: 3px;
   }
-    .login-btn {
+  
+  .login-btn {
     background:  #c29d59;
     color: #fff;
-    width: 38vh;
-    padding: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 9.5rem;
+    padding-right: 10rem;
     border: none;
     border-radius: 3px;
     cursor: pointer;
   } 
-    .google-button,
-  .facebook-button {
+    .social-buttons {
     display: flex;
-    align-items: center;
-    padding: 10px 30px;
     
+   gap: 55px;
+ 
   }
   
+}
+
+@media (max-width:420px ) {
+
+  .logininput {
+    background-color: aliceblue;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 5rem;
+    padding-left: 5rem;
+    border: 1px solid #f0eeee;
+    border-radius: 3px;
+  }
+  
+  .login-btn {
+    background:  #c29d59;
+    color: #fff;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 9.5rem;
+    padding-right: 10rem;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  } 
+    .social-buttons {
+    display: flex;
+    
+   gap: 55px;
+ 
+  }
+    .login-form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+}
+@media (max-width:380px ) {
+
+  .logininput {
+    background-color: aliceblue;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 4rem;
+    padding-left: 3rem;
+    border: 1px solid #f0eeee;
+    border-radius: 3px;
+  }
+  
+  .login-btn {
+    background:  #c29d59;
+    color: #fff;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 8.5rem;
+    padding-right: 8.2rem;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  } 
+    .social-buttons {
+    display: flex;
+    
+   gap: 15px;
+ 
+  }
+    .login-form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+  }
   
 }

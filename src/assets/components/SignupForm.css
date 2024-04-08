@@ -1,17 +1,24 @@
 .signupform{
-    
-    width: 50%;
-    padding-bottom: 2%;
-    padding-left: 5%;
-    border: 1px solid black;
-    border-radius: 5px;
+    padding-top: 2rem;
+   padding-bottom: 2rem;
+   padding-left: 2rem;
+   padding-right: 2rem;
+    border-radius: 20px;
     background-color: white;
     
   }
    .signup{
-    
     display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #c29d59;
+    align-items: center;
     
+   }
+   .sinupform1{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
    }
 
   
@@ -28,9 +35,8 @@
   }
   
   .signupinput {
-    width: 85%;
-    padding: 15px;
-    margin-bottom: 4px;
+  width: 25rem;
+  padding: 12px;
     border: 1px solid black;
     border-radius: 5px;
     box-shadow: none;
@@ -41,7 +47,7 @@
  .signupbutton {
   background:  #c29d59;
   color: #fff;
-  width: 92%;
+  width: 100%;
   padding: 15px;
   border: none;
   border-radius: 3px;
@@ -74,7 +80,7 @@
    .signupbutton {
   background:  #c29d59;
   color: #fff;
-  width: 20rem;
+  width: 19.6rem;
   
   }
   }

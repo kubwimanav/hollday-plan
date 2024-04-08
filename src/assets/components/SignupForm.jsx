@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './SignupForm.css'
 import log from '../images/LoginPage.jpg'
-import { Navigate, useNavigate } from 'react-router-dom';
+import { Link, Navigate, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import { useForm } from 'react-hook-form';
 function SignupForm () {
@@ -130,7 +130,9 @@ alert(error.response.data.message)
           <button className="signupbutton" type="submit">
             Sign Up
           </button>
+
         </form>
+        <p>If Your Have An Acccount Please Login Here <Link to={'/login'} style={{marginLeft:'10px'}}> Login</Link></p>
       </div>
     </div>
   );

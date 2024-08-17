@@ -20,9 +20,7 @@ console.log(JSON.parse(localStorage.getItem("loggedUser")));
      const handlemadal = () => {
        setModal(!modal);
     };
-    //     {
-    //       openModel && <ModelSearch handlemadal={handlemadal} />;
-    //     }
+    
 
 
 

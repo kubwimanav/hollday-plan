@@ -11,7 +11,19 @@ console.log(JSON.parse(localStorage.getItem("loggedUser")));
 
 
     const [modal, setModal] = useState(false);
-    const token =JSON.parse(localStorage.getItem("loggedUser"))?.email.split("@")[0]
+   const token = JSON.parse(localStorage.getItem("loggedUser"))?.email.split("@")[0]
+   
+
+
+     const [openModel, setOpenModel] = useState(false);
+
+     const handlemadal = () => {
+       setModal(!modal);
+    };
+    //     {
+    //       openModel && <ModelSearch handlemadal={handlemadal} />;
+    //     }
+
 
 
    const handlelogout= ()=>{
@@ -23,7 +35,7 @@ console.log(JSON.parse(localStorage.getItem("loggedUser")));
   return (
 
 <section className="homee">
-{modal && <Search />}
+{modal && <Search handlemadal={handlemadal} />}
           <div className="page1">
             <div className="location">
              <p className="email"> <FaEnvelope className="per"/> hollidayplanners@gmail.com</p>

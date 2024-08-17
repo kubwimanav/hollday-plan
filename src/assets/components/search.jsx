@@ -17,10 +17,10 @@ function Search ({setModal}) {
 
     
     <div class="navigation">
-        <a href="/homepage">Home</a>
-        <a href="/tour">Tour</a>
+        <Link to="homepage">Home</Link>
+        <Link to="tour">Tour</Link>
         <Link to="login">Login</Link>
-        <a href="/contact_page">Contact Us</a>
+        <Link to="contact_page">Contact Us</Link>
     </div>
 
 

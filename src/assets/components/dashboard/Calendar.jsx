@@ -9,7 +9,7 @@ function Calendar() {
   const {contact}= mycontext();
   let i=0;
 
-  const userspage=7;
+  const userspage=5;
   const pageviseted= pageNumber*userspage;
   const diplaycontact= contact
   ?.slice(pageviseted,pageviseted+userspage)

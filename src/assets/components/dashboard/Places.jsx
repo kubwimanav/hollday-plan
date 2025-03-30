@@ -86,7 +86,7 @@ function Places() {
 
     
 let i = 0;
-const userspage=6;
+const userspage=5;
 const pageviseted= pageNumber*userspage;
 const diplayusers= users
 ?.slice(pageviseted,pageviseted+userspage)
